@@ -1,89 +1,28 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJsdXUlMjBzaGFyZXxlbnwwfHx8fDE2ODkzNTk3MTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.btn {
+    transition: all 0.3s ease; /* Smooth transition for button hover effects */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.btn:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
 }
 
-.hero {
-    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJhY2tncm91bmR8ZW58MHx8fHwxNjg5MzU5NzE5&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover; /* Background image from Unsplash */
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+.hover-effect:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-.hero h1 {
-    font-size: 3em; /* Bold typography */
-}
-
-.hero p {
-    font-size: 1.5em; /* Larger subheading */
-}
-
-button {
-    padding: 10px 20px;
-    background: #5cb85c; /* Call to action button color */
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.features, .testimonials, .cta {
-    padding: 20px;
-    text-align: center;
-}
-
-.feature {
-    margin: 20px 0;
-}
-
+/* Footer styles */
 footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-   .hero h1 {
-       font-size: 2em; /* Adjusted for smaller screens */
-   }
-    
-   .hero p {
-       font-size: 1em; /* Adjusted for smaller screens */
-   }
-
-   button {
-       width: 100%; /* Full width for buttons on mobile */
-       margin-top: 10px; /* Spacing adjustments */
-   }
+    position: relative;
 }
