@@ -3,73 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Landing Page</title>
+    <title>Airline Ticketing Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <header>
-        <div class="logo">Your Brand</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Transform Your Ideas into Reality</h1>
-        <p>Join us to create innovative solutions tailored just for you.</p>
-        <button onclick="location.href='#contact'">Get Started</button>
-    </section>
+<header class="bg-primary text-white text-center py-5">
+    <h1>Welcome to SkyHigh Airlines</h1>
+    <p>Your journey begins here</p>
+</header>
 
-    <section class="usp">
-        <h2>Why Choose Us?</h2>
-        <p>We offer personalized solutions that drive results, backed by a dedicated team of experts.</p>
-    </section>
-
-    <section class="features">
-        <h2>Our Features</h2>
-        <div class="feature">
-            <h3>Custom Solutions</h3>
-            <p>Tailored services that meet your unique needs.</p>
+<section class="container my-5">
+    <h2 class="text-center">Book Your Flight</h2>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="departure">Departure</label>
+                <input type="text" class="form-control" id="departure" placeholder="City or Airport">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="City or Airport">
+            </div>
         </div>
-        <div class="feature">
-            <h3>Expert Team</h3>
-            <p>Work with industry professionals dedicated to your success.</p>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" class="form-control" id="departure-date">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="return-date">Return Date</label>
+                <input type="date" class="form-control" id="return-date">
+            </div>
         </div>
-        <div class="feature">
-            <h3>24/7 Support</h3>
-            <p>We're here for you anytime, anywhere.</p>
-        </div>
-    </section>
+        <button type="submit" class="btn btn-primary btn-block shadow hover-effect">Search Flights</button>
+    </form>
+</section>
 
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <blockquote>"This service changed my business for the better!" - Client Name</blockquote>
-        <blockquote>"Exceptional support and results!" - Client Name</blockquote>
-    </section>
-
-    <section class="cta">
-        <h2>Ready to Elevate Your Business?</h2>
-        <button onclick="location.href='#contact'">Contact Us Today</button>
-    </section>
-
-    <footer>
-        <div class="links">
-            <a href="#privacy">Privacy Policy</a> |
-            <a href="#terms">Terms of Service</a>
+<section class="container my-5">
+    <h2 class="text-center">Why Choose Us?</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h3>Affordable Prices</h3>
+            <p>We offer competitive prices on all flights.</p>
         </div>
-        <div class="social-media">
-            <!-- Social media icons -->
+        <div class="col-md-4">
+            <h3>24/7 Customer Support</h3>
+            <p>Our team is here to help you at any time.</p>
         </div>
-        <div class="contact-info">
-            Email: info@example.com | Phone: (123) 456-7890
+        <div class="col-md-4">
+            <h3>Easy Booking</h3>
+            <p>Book your flight in just a few clicks!</p>
         </div>
-    </footer>
+    </div>
+</section>
 
+<section class="bg-light text-center py-5">
+    <h2>Join Our Newsletter</h2>
+    <p>Stay updated with the latest offers and news!</p>
+    <form class="container mb-3">
+        <input type="email" placeholder="Enter your email" required class="form-control mb-2 d-inline-block w-50 mx-auto">
+        <button type="submit" class="btn btn-primary hover-effect">Subscribe</button>
+    </form>
+</section>
+
+<footer class="bg-primary text-white text-center py-4">
+    <p>&copy; 2024 SkyHigh Airlines. All rights reserved.</p>
+    <a href="#" class="text-white">Privacy Policy</a> | 
+    <a href="#" class="text-white">Terms of Service</a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
 </body>
 </html>
