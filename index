@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
     <header>
@@ -70,5 +70,14 @@
         </div>
     </footer>
 
+    <!-- Mobile Optimization Strategies -->
+    <!-- 1. Use responsive design to adapt to various screen sizes. -->
+    <!-- 2. Simplify layout and navigation, keeping it user-friendly. -->
+    <!-- 3. Ensure fast loading times by optimizing images and code. -->
+    <!-- 4. Use concise copy and bullet points for scannability. -->
+    <!-- 5. Design touch-friendly buttons and input fields. -->
+    <!-- 6. Make calls to action clear and prominent. -->
+    <!-- 7. Test on multiple devices to ensure functionality. -->
+    <!-- 8. Monitor performance and adjust based on user insights. -->
 </body>
 </html>
